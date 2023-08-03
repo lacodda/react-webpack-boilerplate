@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '@/images/logo.png';
+import logo from '@/images/logo.svg';
 import './style.scss';
 
 const Home: React.FC = () => {
