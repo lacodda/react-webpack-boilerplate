@@ -2,11 +2,7 @@
   "extends": [
     "eslint:recommended",
     "standard-with-typescript",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:react/recommended"
   ],
   "rules": {
     "react/prop-types": "off",
@@ -63,12 +59,6 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      },
-      "alias": {
-        "map": [
-          ["@", "./src"]
-        ],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }

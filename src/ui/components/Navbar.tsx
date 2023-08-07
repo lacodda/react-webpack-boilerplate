@@ -30,6 +30,9 @@ const NavbarMenu = styled.div`
       height: min-content;
       color: var(--black);
     }
+    input {
+      width: 100%;
+    }
   `;
 
 const NavbarContainer = styled.div`
