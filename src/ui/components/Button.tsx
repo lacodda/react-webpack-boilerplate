@@ -1,43 +1,32 @@
-html {
-  font-size: var(--font-size);
-  font-family: var(--font-family);
-  color: var(--black);
-}
+import styled from 'styled-components';
 
-h1 {
-  font-size: 2.6rem;
-}
-
-h2 {
-  font-size: 1.6rem;
-}
-
-h3 {
-  font-size: 1.1rem;
-}
-
-.btn {
+export const Button = styled.button`
   background-image: linear-gradient(to top, var(--teal) 0%, var(--blue) 51%, var(--teal) 100%);
   padding: .75rem .5rem;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   transition: 0.5s;
   background-size: auto 200%;
   color: var(--white);
   border-radius: 0.5rem;
   display: flex;
   border-color: transparent;
-  font-weight: 700;
-  font-size: 1.8rem;
+  font-weight: 400;
+  font-size: 0.8rem;
   cursor: pointer;
-  line-height: .5rem;
+  line-height: 0.5rem;
   align-items: center;
   height: min-content;
-
   &:hover {
     background-position: right center;
-    /* change the direction of the change here */
     color: var(--white);
     text-decoration: none;
   }
-}
+  &.size-l {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+`;
+
+export default Button;
